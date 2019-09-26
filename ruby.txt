@@ -1,0 +1,42 @@
+def saludar(nombre)
+ puts "hola " + nombre
+end
+
+i = 0
+num = 20
+num.times do
+  puts "Hola mundo"
+end
+
+clases--------------------https://blog.makeitreal.camp/programacion-orientada-por-objetos-ruby/
+class Humano
+  attr_accessor :name, :age, :genre
+
+  def greet
+    puts "Hola, me llamo #{@name} y tengo #{@age} años"
+  end
+end
+
+juan = Humano.new
+juan.name = "Juan Perez"
+juan.age = 12
+juan.genre = "M"
+
+puts juan.name # imprime Juan Perez
+puts juan.age # imprime 12
+puts juan.genre # imprime M
+
+puts juan.greet # imprime Hola, me llamo Juan Perez
+
+________________----------
+pises = {'Colombia'=>'Col', 'España'=>'Esp','Perú'=>'Per', 'Japon'=>'JPN'}
+pises.each do |paises|
+   
+    puts "la abreviatura de " + paises[0]+" es "+ paises[1]
+end
+___________________________----------------
+pises = {'Colombia'=>'Col', 'España'=>'Esp','Perú'=>'Per', 'Japon'=>'JPN'}
+pises.each do |llave,valor|
+   
+    puts "la abreviatura de #{llave} es #{valor}"
+end
